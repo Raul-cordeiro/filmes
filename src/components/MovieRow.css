@@ -1,0 +1,68 @@
+.movieRow {
+    margin-bottom: 30px;
+}
+
+.movieRow h2 {
+    margin: 0 0 0 30px;
+    color: rgb(220, 10, 10);
+}
+
+.movieRow__list {
+    
+    display: flex;
+    overflow-x: hidden;
+    padding: 20px 0;
+    
+}
+.item_img {
+    width: 150px;
+    margin-right: 10px;
+    flex: 0 0 auto;
+}
+
+.item_img img {
+    width: 100%;
+    transform: scale(0.9);
+    transition: all ease 0.2s;
+    border-radius: 15px;
+}
+
+.item_img:hover img {
+    transform: scale(1);
+}
+
+.movieRow__arrow {
+    position: absolute;
+    width: 40px;
+    height: 225px;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.movieRow__arrow--left {
+    left: 0;
+}
+
+.movieRow__arrow--right {
+    right: 0;
+}
+
+.movieRow:hover .movieRow__arrow {
+    opacity: 1;
+}
+
+@media (max-width: 760px){
+
+    
+    .movieRow__arrow--left,
+    .movieRow__arrow--right{
+        opacity: 1;
+    }
+}
