@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import tmdb from './tmdb.jsx';
-import MovieRow from './components/MovieRow.jsx'; // Certifique-se de que o caminho do componente está correto
+import MovieRow from './components/MovieRow.jsx'; 
 import FilmeDestaque from './components/FilmeDestaque.jsx';
 import Headersnovo from './components/Hedersnovo.jsx'
 import ClickCounter from './components/ClickCounter.jsx'
@@ -50,7 +50,7 @@ export default function App() {
               <a href='https://api.whatsapp.com/send?phone=5562984687974&text=visitei%20seu%20site%20na%20net;'>WhatApp</a>
           </div>
           <p className='letras'>
-              Raul Cordeiro Tecnologias Fone: 62 98468-7974
+              Raul Cordeiro Tecnologias Fale conosco Fone: 62 98468-7974
           </p>
           
 
